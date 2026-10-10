@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Button from "./Button";
 import LeadRow from "./LeadRow";
+import SkeletonRow from "./SkeletonRow";
 import { Lead } from "@/app/types/lead";
 import { SKELETON_ROW_COUNT } from "@/app/lib/constants";
 
@@ -17,18 +18,6 @@ type LeadListProps = {
   onSaveTitle: (lead: Lead, job: string) => Promise<boolean>;
   onDelete: (lead: Lead) => void;
 };
-
-function SkeletonRow() {
-  return (
-    <li className="flex items-center gap-3 px-5 py-4">
-      <span className="h-10 w-10 animate-pulse rounded-full bg-line" />
-      <div className="flex-1 space-y-2">
-        <span className="block h-3 w-1/3 animate-pulse rounded bg-line" />
-        <span className="block h-3 w-1/2 animate-pulse rounded bg-line/70" />
-      </div>
-    </li>
-  );
-}
 
 function Message({ title, text, children }: { title: string; text: string; children?: ReactNode }) {
   return (
