@@ -6,7 +6,8 @@ import Header from "./components/Header";
 import { MAX_TOASTS, TOAST_DURATION_MS } from "./lib/constants";
 
 export const metadata: Metadata = {
-  title: "Lead Dashboard",
+  title: "Lead Manager",
+  description: "Dashboard to manage your sales leads",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
