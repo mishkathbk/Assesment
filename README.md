@@ -42,7 +42,7 @@ Open http://localhost:3000.
 | `NEXT_PUBLIC_API_URL` | API base URL, `https://reqres.in/api` |
 | `NEXT_PUBLIC_API_KEY` | ReqRes API key, sent in the `x-api-key` header |
 
-The demo key in `.env.example` is limited to 40 requests per day per IP. For more, create a free account on ReqRes and use your own key.
+Create a free account on [ReqRes](https://app.reqres.in/sign-up) to get an API key, and add it to `.env.local`. The live demo uses its own key.
 
 ## API
 
