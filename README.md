@@ -2,6 +2,8 @@
 
 A small dashboard to view, add, edit and delete sales leads. Built with Next.js and TypeScript, using the [ReqRes](https://reqres.in) API as the backend.
 
+**Live demo:** https://crmlead-eight.vercel.app
+
 ## Features
 
 - Paginated lead list, with the current page kept in the URL (`?page=2`)
@@ -78,3 +80,7 @@ app/
 ReqRes is a mock API. Create, update and delete requests return a success response, but nothing is saved on the server. The app updates the list locally after each request, so changes stay visible until you press Refresh or reload the page.
 
 ReqRes users don't have a job title, so leads loaded from the API start without one.
+
+The assessment doesn't ask for an avatar upload, so the add and edit form doesn't include one. Leads from the API show their ReqRes avatar, and new leads show their initials instead.
+
+ReqRes also limits how many requests a key can make per day. If the app shows "Too many requests", the limit has been reached and it resets the next day.
